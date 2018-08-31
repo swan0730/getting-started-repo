@@ -12,6 +12,6 @@
   "author": "NPM Demo User",
   "license": "ISC",
   "publishConfig": {
-    "registry": "http://localhost:8081/artifactory/api/npm/npm/"
+    "registry": "http://10.1.11.22:8081/artifactory/api/npm/npm/"
   }
 }
