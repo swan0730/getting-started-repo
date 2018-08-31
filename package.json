@@ -1,0 +1,17 @@
+{
+  "name": "@dineth/test",
+  "version": "3.0.2",
+  "description": "A Demo package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "demo"
+  ],
+  "author": "NPM Demo User",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "http://localhost:8081/artifactory/api/npm/npm/"
+  }
+}
