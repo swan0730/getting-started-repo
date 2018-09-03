@@ -4,7 +4,10 @@ FROM node:9-alpine as builder
 # Runtime arguments
 ARG VERSION
 
+ARG TEST
+
 RUN echo ${VERSION}
+RUN echo ${TEST}
 
 # set the wrking directory to app
 WORKDIR /app
