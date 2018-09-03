@@ -20,11 +20,11 @@ RUN npm install -g json
 
 # setting up ./npmrc and installing node_moduls
 RUN touch .npmrc \
-    && echo '@dineth:registry=http://10.1.11.22:8081/artifactory/api/npm/npm/' >> .npmrc \
-    && echo "//10.1.11.22:8081/artifactory/api/npm/npm/:_password=QVAyRzZtakdCcVhTQlBvcGdITERGaGNIZUx0" >> .npmrc \
-    && echo "//10.1.11.22:8081/artifactory/api/npm/npm/:username=admin" >> .npmrc \
-    && echo '//10.1.11.22:8081/artifactory/api/npm/npm/:email=youremail@email.com' >> .npmrc \
-    && echo '//10.1.11.22:8081/artifactory/api/npm/npm/:always-auth=true' >> .npmrc \
+    && echo '@dineth:registry=http://10.1.11.37:8081/artifactory/api/npm/npm/' >> .npmrc \
+    && echo "//10.1.11.37:8081/artifactory/api/npm/npm/:_password=QVAyRzZtakdCcVhTQlBvcGdITERGaGNIZUx0" >> .npmrc \
+    && echo "//10.1.11.37:8081/artifactory/api/npm/npm/:username=admin" >> .npmrc \
+    && echo '//10.1.11.37:8081/artifactory/api/npm/npm/:email=youremail@email.com' >> .npmrc \
+    && echo '//10.1.11.37:8081/artifactory/api/npm/npm/:always-auth=true' >> .npmrc \
     && cp .npmrc ~/.npmrc 
 
 RUN json -I -f ./package.json -e 'this.version="'${VERSION}'"'
